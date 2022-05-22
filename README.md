@@ -33,6 +33,50 @@ State-of-the-art neural models can learn from our data how to (1) shift a negati
 
 As our paper baselines show, neural models still have a long ways to go before they can reliably generate positive perspectives. We see particular errors from _insubstantial changes, contradictions to the premise, self-contradictions, and hallucinations_. Overall, our suggests that our dataset can serve as a useful benchmark for building natural language generation systems with positive perspectives. For more information, please [read the paper](https://faculty.cc.gatech.edu/~dyang888/docs/acl22_reframing.pdf).
 
+## *How do I run the baseline models?* 
+**1. Set Up Environment**
+* CUDA, cudnn
+* anaconda
+```
+conda create --name reframe python=3.7
+conda activate reframe
+pip install -r requirements.txt
+```
+**2. Dataset Preparation**
+The datasets are under the data/ folder.
+
+-Random, SBERT, T5, BART: wholetrain.csv, wholetest.csv
+The datasets contain fields: original_text, reframed_text, strategy, original_with_label
+
+-GPT, GPT2: wholetrain_gpt.txt, wholetest.csv
+The train data contains <startoftext> token and <endoftext> token for each sentence pair. Also, ‘reframed: ‘ token indicates the position where the reframed sentence begins for each sentence pair. Each sentence pair starts on a new line.
+
+-Seq2SeqLSTM: for_train.txt, for_test.txt
+The datasets contain paired texts separated by tab in each line: original_text \t reframed_text
+
+-CopyNMT: train-original.txt, train-reframed.txt, validation-original.txt, validation-reframed.txt, test-original.txt, test-reframed.txt
+Each file contains the original/reframed sentences separated by \n.
+
+
+**3 . Run the Baseline Models**
+
+Random, Sbert, T5, BART, GPT, GPT2: 
+```python3 run.py —-arguments```
+Arguments:
+--model: choose from random, sbert, t5, BART
+--setting: default is unconstrained, controlled/predict setting is supported for t5 and BART
+--train: path to train data file
+--dev: path to dev data file
+--test: path to test data file
+
+CopyNMT: Execute copynmt_train.sh and copynmt_eval.sh
+```
+bash copynmt_train.sh
+bash copynmt_eval.sh
+```
+
+Seq2Seq-lstm: git clone https://github.com/bond005/seq2seq.git, replace the data files in the data/ folder and follow the instructions to train the seq2seq-lstm model
+
 ## *How do I cite this work?* 
 
 **Citation:**
