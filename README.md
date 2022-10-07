@@ -2,7 +2,7 @@
 
 _Inducing Positive Perspectives with Text Reframing_
 
-[[Read the Paper]](https://faculty.cc.gatech.edu/~dyang888/docs/acl22_reframing.pdf) | [[Download the Data]](https://www.dropbox.com/sh/pnoczmv0uyn51e6/AAAGek6yX12Yc4PA2RwtZeZKa?dl=0)
+[[Read the Paper]](https://faculty.cc.gatech.edu/~dyang888/docs/acl22_reframing.pdf) | [[Download the Data]](https://www.dropbox.com/sh/pnoczmv0uyn51e6/AAAGek6yX12Yc4PA2RwtZeZKa?dl=0) | [[Demo]] (https://huggingface.co/spaces/Ella2323/Positive-Reframing)
 
 <img src="frontpage.png" alt="frontpage" width="650"/>
 
