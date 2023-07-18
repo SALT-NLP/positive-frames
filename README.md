@@ -4,6 +4,14 @@ _Inducing Positive Perspectives with Text Reframing_
 
 [[Read the Paper]](https://faculty.cc.gatech.edu/~dyang888/docs/acl22_reframing.pdf) | [[Download the Data]](https://www.dropbox.com/sh/pnoczmv0uyn51e6/AAAGek6yX12Yc4PA2RwtZeZKa?dl=0) | [[Demo]](https://huggingface.co/spaces/Ella2323/Positive-Reframing)
 
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
 <img src="frontpage.png" alt="frontpage" width="650"/>
 
 ## *Why Positive Frames?* 
